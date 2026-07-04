@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clove Dental Care - Premium orthodontic, cosmetic, and general dental services. Book an appointment online with our expert dental surgeons in a modern, comfortable environment.">
+  <title>Clove Dental Care | Premium Modern Dentistry & Aesthetics</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">C</span>
+        Clove Dental Care
+      </a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#booking">Book Appointment</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.01c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06z"/></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10 0-4.8 3.5-8.9 8.2-9.8.6-.1 1.2.3 1.3.9.1.6-.3 1.2-.9 1.3-3.7.7-6.5 3.9-6.5 7.7 0 4.4 3.6 8 8 8 3.8 0 7-2.8 7.7-6.5.1-.6.7-1 1.3-.9.6.1 1 .7.9 1.3-.9 4.7-5 8.2-9.9 8.2z"/></svg>
+        </button>
+        <a href="#booking" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px;">Book</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="badge">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              Next-Gen Dental Clinic
+            </div>
+            <h1>Crafting Beautiful, Healthy Smiles</h1>
+            <p>Welcome to Clove Dental Care. We combine advanced 3D diagnostic technology with gentle, patient-centered techniques to give you the most comfortable dental experience possible.</p>
+            <div class="hero-buttons">
+              <a href="#booking" class="btn btn-primary">Book Consultation</a>
+              <a href="#services" class="btn btn-secondary">Explore Treatments</a>
+            </div>
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>99.4%</h3>
+                <p>Satisfaction Rate</p>
+              </div>
+              <div class="stat-item">
+                <h3>15k+</h3>
+                <p>Happy Patients</p>
+              </div>
+              <div class="stat-item">
+                <h3>12+</h3>
+                <p>Expert Doctors</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <!-- Glow background effect -->
+            <div class="glow-blob"></div>
+            <!-- Three.js Canvas Container -->
+            <div class="hero-canvas-container" id="canvasContainer" title="Drag to rotate tooth model"></div>
+            <!-- Fallback Image (Web design asset) -->
+            <div class="hero-image-fallback" id="heroFallback">
+              <img src="assets/hero_dental_3d.jpg" alt="Modern 3D Dental Clinic Tooth Model">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="sub-header-green">SPECIALIZED SERVICES</span>
+          <h2>Modern Solutions for All Dental Needs</h2>
+        </div>
+
+        <div class="specialized-services-layout">
+          <!-- Left side: glowing green panel with three icons -->
+          <div class="glowing-green-panel">
+            <div class="panel-item active" data-service="checkups" tabindex="0" role="button" aria-label="Checkups service">
+              <div class="panel-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="8" cy="8" r="4"/>
+                  <path d="M11 11l9 9M17 13l2-2M19 15l2-2"/>
+                </svg>
+              </div>
+              <span class="panel-text">Check-ups</span>
+            </div>
+            
+            <div class="panel-item" data-service="cleaning" tabindex="0" role="button" aria-label="Cleaning service">
+              <div class="panel-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 20h3l11-11-3-3L4 17v3z"/>
+                  <path d="M18 5l1 1M14.5 5.5l1 1M16.5 3.5l1 1"/>
+                </svg>
+              </div>
+              <span class="panel-text">Cleaning</span>
+            </div>
+
+            <div class="panel-item" data-service="protection" tabindex="0" role="button" aria-label="Protection service">
+              <div class="panel-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M8 9.5a4 4 0 0 1 8 0M12 11.5v4"/>
+                </svg>
+              </div>
+              <span class="panel-text">Protection</span>
+            </div>
+          </div>
+
+          <!-- Right side: large rounded dark teal card -->
+          <div class="services-detail-card-container">
+            <div class="service-detail-card" id="serviceDetailCard">
+              <div class="detail-card-icon">🦷</div>
+              <h3 class="detail-card-title">Preventive Dentistry</h3>
+              <p class="detail-card-desc">Maintain optimal oral health with routine cleanings, gentle scaling, comprehensive 3D X-rays, and customized dental health guides.</p>
+              <a href="#booking" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">Book Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION (Jaw Anatomy focus) -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <div class="about-visual">
+            <img src="assets/jaw_anatomy_3d.jpg" alt="Futuristic 3D Jaw Anatomy Model" class="about-image">
+            <div class="about-feature-overlay">
+              <span class="icon">🔬</span>
+              <div>
+                <h4>Interactive Diagnosis</h4>
+                <p>We analyze 3D scans of your jaw structure to tailor precise surgical and alignment plans.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="badge">Who We Are</div>
+            <h2>Pioneering the Future of Oral Healthcare</h2>
+            <p>At Clove Dental Care, we believe that dental visits should be something you look forward to. Our practice is built on a foundation of empathy, state-of-the-art dental technology, and visual design layouts that explain your therapy clearly.</p>
+            
+            <div class="about-features">
+              <div class="about-feat-item">
+                <span>✓</span>
+                <div>
+                  <h4>Zero-Pain Systems</h4>
+                  <p>Computer-controlled anesthesia delivery system.</p>
+                </div>
+              </div>
+              <div class="about-feat-item">
+                <span>✓</span>
+                <div>
+                  <h4>Sterilization Standards</h4>
+                  <p>Class B autoclave autoclaving matching surgical levels.</p>
+                </div>
+              </div>
+              <div class="about-feat-item">
+                <span>✓</span>
+                <div>
+                  <h4>In-House 3D Lab</h4>
+                  <p>Milling crowns and veneers in under 2 hours.</p>
+                </div>
+              </div>
+              <div class="about-feat-item">
+                <span>✓</span>
+                <div>
+                  <h4>Comfort Options</h4>
+                  <p>Noise-canceling headphones and relaxing ceiling displays.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#booking" class="btn btn-primary">Schedule a Visit</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE BOOKING SECTION -->
+    <section class="booking" id="booking">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Appointment Desk</div>
+          <h2>Ready to Transform Your Smile?</h2>
+          <p>Book your clinical evaluation below. Our automated system will lock in your slot instantly and coordinate with your insurer.</p>
+        </div>
+
+        <div class="booking-wrapper">
+          <!-- Information sidebar -->
+          <div class="booking-info">
+            <div>
+              <h3>Clove Dental</h3>
+              <p>Book standard or emergency slots. We'll send an automated SMS reminder with directions and clinic preparation instructions.</p>
+              
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">📞</div>
+                  <div class="contact-text">
+                    <h5>Call Us Directly</h5>
+                    <p>+1 (555) 321-CLOVE</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon">✉️</div>
+                  <div class="contact-text">
+                    <h5>Email Support</h5>
+                    <p>hello@clovedental.com</p>
+                  </div>
+                </div>
+                
+                <div class="contact-item">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-text">
+                    <h5>Our Address</h5>
+                    <p>452 Emerald Boulevard, Suite 100</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="font-size: 13px; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 24px;">
+              * Free consultations are valid for new patients on cleaning and cosmetic analysis services.
+            </div>
+          </div>
+
+          <!-- Multi-step form panel -->
+          <div class="booking-form-panel">
+            <div class="form-step-indicator">
+              <span class="step-dot active" id="stepDot1"></span>
+              <span class="step-dot" id="stepDot2"></span>
+              <span class="step-dot" id="stepDot3"></span>
+            </div>
+
+            <form id="appointmentForm" novalidate>
+              <!-- Step 1: Patient Info -->
+              <div class="form-step active" id="step1">
+                <h3 style="margin-bottom: 24px;">Patient Details</h3>
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" placeholder="John Doe" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber">Phone Number *</label>
+                    <input type="tel" id="phoneNumber" placeholder="(555) 000-0000" required>
+                  </div>
+                  <div class="form-group full-width">
+                    <label for="emailAddress">Email Address *</label>
+                    <input type="email" id="emailAddress" placeholder="john@example.com" required>
+                  </div>
+                  <div class="form-group full-width">
+                    <label for="insuranceProvider">Insurance Provider (Optional)</label>
+                    <input type="text" id="insuranceProvider" placeholder="e.g. Cigna, Aetna">
+                  </div>
+                </div>
+                <div class="form-nav-buttons">
+                  <span></span>
+                  <button type="button" class="btn btn-primary" id="btnNext1">Next Step →</button>
+                </div>
+              </div>
+
+              <!-- Step 2: Preferences -->
+              <div class="form-step" id="step2">
+                <h3 style="margin-bottom: 24px;">Select Date & Time</h3>
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="treatmentType">Treatment Required *</label>
+                    <select id="treatmentType" required>
+                      <option value="" disabled selected>Choose a service</option>
+                      <option value="preventive">Preventive Cleaning & Checkup</option>
+                      <option value="cosmetic">Cosmetic Analysis / Veneers</option>
+                      <option value="implants">Dental Implant Assessment</option>
+                      <option value="orthodontics">Orthodontics (Invisalign)</option>
+                      <option value="pediatric">Pediatric Dental Visit</option>
+                      <option value="emergency">Emergency Relief Support</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="appointmentDate">Preferred Date *</label>
+                    <input type="date" id="appointmentDate" required>
+                  </div>
+                  
+                  <div class="form-group full-width">
+                    <label>Available Slots *</label>
+                    <div class="slots-container" id="slotsContainer">
+                      <div class="time-slot" data-slot="09:00 AM">09:00 AM</div>
+                      <div class="time-slot" data-slot="10:30 AM">10:30 AM</div>
+                      <div class="time-slot" data-slot="01:00 PM">01:00 PM</div>
+                      <div class="time-slot" data-slot="02:30 PM">02:30 PM</div>
+                      <div class="time-slot" data-slot="04:00 PM">04:00 PM</div>
+                    </div>
+                    <input type="hidden" id="selectedSlot" required>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label for="patientMessage">Notes or Symptoms (Optional)</label>
+                    <textarea id="patientMessage" rows="3" placeholder="Tell us if you have pain or specific questions..."></textarea>
+                  </div>
+                </div>
+                <div class="form-nav-buttons">
+                  <button type="button" class="btn btn-secondary" id="btnPrev2">← Back</button>
+                  <button type="submit" class="btn btn-primary" id="btnSubmit">Confirm Booking</button>
+                </div>
+              </div>
+
+              <!-- Step 3: Success Confirmation -->
+              <div class="form-step" id="step3">
+                <div class="booking-success">
+                  <div class="success-icon">✓</div>
+                  <h4>Booking Confirmed!</h4>
+                  <p>Thank you, <span id="confirmedName">John</span>. Your appointment for <strong id="confirmedTreatment">Preventive Cleaning</strong> has been reserved for <strong id="confirmedTime">July 10th at 10:30 AM</strong>.</p>
+                  <p style="font-size: 14px; margin-bottom: 32px;">A confirmation text and calendar invite has been sent to your email.</p>
+                  <button type="button" class="btn btn-secondary" id="btnReset">Book Another Appointment</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Patient Stories</div>
+          <h2>Loved by Thousands</h2>
+          <p>Read honest reviews from patients who experienced our pain-free clinical environment and customized aesthetics.</p>
+        </div>
+
+        <div class="carousel-container">
+          <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+              
+              <!-- Slide 1 -->
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">I have always had intense phobias of dentists, but the team here changed everything. The 3D imagery explained exactly what was going on, and the actual crown implantation felt completely painless. The clinic feels like a premium spa!</p>
+                <div class="user-profile">
+                  <div class="stars">★★★★★</div>
+                  <div class="user-info">
+                    <h4>Marcus Vance</h4>
+                    <p>Dental Implant Patient</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">My Invisalign alignment plan was completely digital. I saw the final tooth alignment animation before we even ordered the aligners. 6 months later, my smile is exactly how it was predicted. Phenomenal tech and bedside manners.</p>
+                <div class="user-profile">
+                  <div class="stars">★★★★★</div>
+                  <div class="user-info">
+                    <h4>Aria Bennett</h4>
+                    <p>Invisalign Alignment Patient</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <p class="testimonial-text">Brought my 6-year-old here for sealants and cleanings. The pediatric dentist was incredibly friendly, showing him how the tools work on a toy before doing anything. He left asking when we could go back to the dentist!</p>
+                <div class="user-profile">
+                  <div class="stars">★★★★★</div>
+                  <div class="user-info">
+                    <h4>Sarah Jenkins</h4>
+                    <p>Mother of Patient</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-btn carousel-btn-prev" id="carouselBtnPrev" aria-label="Previous Testimonial">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="carousel-btn carousel-btn-next" id="carouselBtnNext" aria-label="Next Testimonial">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <div class="carousel-dots" id="carouselDots">
+            <span class="carousel-dot active" data-index="0"></span>
+            <span class="carousel-dot" data-index="1"></span>
+            <span class="carousel-dot" data-index="2"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge">Common Concerns</div>
+          <h2>Frequently Asked Questions</h2>
+          <p>We believe in transparent pricing and clear clinic operations. Have questions? Find quick details below.</p>
+        </div>
+
+        <div class="faq-wrapper">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What should I bring to my first dental appointment?</h4>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Please bring a government-issued photo ID, your insurance card (if applicable), and any recent dental radiographs taken within the past 12 months. If you have a complex medical history, please bring a list of your current prescriptions.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>Do you accept insurance? How do insurance co-pays work?</h4>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Yes, we accept major dental insurance networks including Delta Dental, Cigna, Aetna, MetLife, and United Healthcare. Our system files claims directly for you. You are responsible for any co-pays or deductibles at the time of service, which we estimate beforehand.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What is the difference between silver and composite white fillings?</h4>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                Silver amalgam fillings are highly durable metal alloys, whereas composite fillings are tooth-colored resin mixtures. We exclusively utilize premium composite resins at Clove Dental. They match your tooth's natural color perfectly and bond directly to the tooth structure, preserving more healthy tooth material.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>How often should I visit the clinic for routine cleanings?</h4>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                For the majority of patients, we recommend scheduling an exam and cleanings every 6 months to prevent plaque build-up and detect decay early. Patients with active periodontal (gum) concerns may benefit from cleanings every 3 to 4 months.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h4>What do I do if I have a dental emergency over the weekend?</h4>
+              <div class="faq-toggle-icon">+</div>
+            </div>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                We maintain an emergency hotline for active dental emergencies (severe pain, bleeding, or knocked-out teeth) on weekends. Call +1 (555) 321-CLOVE and press option 9 to reach our on-call dental surgeon. We offer prioritized emergency slots on Monday mornings.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>Clove Dental Care</h4>
+        <p>Providing premium clinical excellence and state-of-the-art dental treatments with a gentle touch. Emphasizing patient comfort and aesthetic outcomes.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+          <a href="#" class="social-btn" aria-label="Twitter">TW</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">LN</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Treatments</h4>
+        <ul>
+          <li><a href="#services">Preventive Care</a></li>
+          <li><a href="#services">Cosmetic Whitening</a></li>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">Invisalign Aligners</a></li>
+          <li><a href="#services">Emergency Operations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours">
+        <h4>Office Hours</h4>
+        <ul>
+          <li>Monday - Friday <span>8:00 AM - 6:00 PM</span></li>
+          <li>Saturday <span>9:00 AM - 3:00 PM</span></li>
+          <li>Sunday <span>Closed</span></li>
+          <li>Emergencies <span>24/7 Hotline</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <ul>
+          <li>
+            <span>📞</span>
+            +1 (555) 321-CLOVE
+          </li>
+          <li>
+            <span>✉️</span>
+            hello@clovedental.com
+          </li>
+          <li>
+            <span>📍</span>
+            452 Emerald Boulevard, Suite 100
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Clove Dental Care. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Patient Rights</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include Three.js via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Main Application Logic Script -->
+  <script src="app.js"></script>
+</body>
+</html>
